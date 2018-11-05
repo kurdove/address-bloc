@@ -57,5 +57,9 @@ module.exports = class MenuController{
         var time = today.getHours() + ":" + today.getMinutes();
         var dateTime = date+' '+time;
         console.log(dateTime);
-    };
+    }
+
+    getContactCount(){
+        return this.contacts.length;
+    }
 }
