@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const ContactController = require("./ContactController");
 
 module.exports = class MenuController{
     constructor(){
@@ -10,7 +11,7 @@ module.exports = class MenuController{
                 choices:['Add new contact', 'Exit', 'Current time']
             }
         ];
-        this.contacts=[];
+        this.book = new ContactController();
     }
 
     main(){
